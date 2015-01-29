@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Zillow Parser Main Page</title>
+  <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Zillow Parser Main Page</h1>
+    </header>
+    <div class="query-form">
+      <form method="GET" action="localhost:8000/search" class="form-inline">
+        <div class="form-group">
+          <label for="query">Query</label>
+          <input type="text" placeholder="Put your query here" id="query" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="item-number">Item number</label>
+          <input type="text" placeholder="1" id="item-number" class="form-control">
+        </div>
+        <input type="submit" value="Go!" class="btn btn-success">
+      </form>
+    </div>
+  </div>
+</body>

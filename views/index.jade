@@ -1,0 +1,41 @@
+doctype html
+head
+	meta(charset='utf-8')
+	title Zillow Parser Main Page
+	link(rel='stylesheet', type='text/css', href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css')
+	link(rel='stylesheet', type='text/css' href='../css/styles.css')
+	style
+		| .form-group label {
+		|	margin-right: 1.5em;
+		|	margin-left: 2em;
+		|  }			
+		|  input[type='submit'] {
+		| 	outline: none; margin-left: 2em;
+		|  }
+		|  .container {
+		|   text-align: center;
+		|  }
+		|  label {
+		|   color: #666;
+		|  }
+		|  body {
+		|	background: url(http://shiningstuff.com/wp-content/uploads/2014/06/blurred_00267404.jpg) fixed;
+		|   background-size: cover;
+		|  }
+		|  h1 {
+		|	margin-top: 2em;
+		| 	margin-bottom: 5em;
+		|  }
+body
+	.container
+		header
+			h1 Zillow Parser Main Page
+		.query-form
+			form(method='GET' action='/search').form-inline
+				.form-group
+					label(for='query') Query
+					input(type='text' name='query' placeholder='Put your query here' ).form-control#query
+				.form-group
+					label(for='item-number') Item number
+					input(type='text' name='item' placeholder='1').form-control#item-number
+				input(type='submit', value='Go!').btn.btn-success 
